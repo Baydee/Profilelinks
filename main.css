@@ -1,5 +1,6 @@
-/* styles.css */
+
 body {
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -29,17 +30,9 @@ header {
     }
 }
 
-
-body {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-
 body.fade-in {
     animation: fadeInUp 1s ease-out forwards;
 }
-
 
 body.fade-in > * {
     animation: fadeInUp 1s ease-out forwards;
@@ -51,28 +44,27 @@ h2.baydee {
     color: #f0f0f0;
     transition: transform 0.3s ease-in-out;
 }
-h2.baydee:hover{
+h2.baydee:hover {
     transform: scale(1.08);
 }
 h1.inline {
     font-size: 24px;
-    margin: 30px 0px ; 
+    margin: 30px 0px; 
     text-align: center; 
     flex-grow: 1; 
     color: black;
     transition: transform 0.3s ease-in-out;
 }
-
-h1:hover{
+h1.inline:hover {
     transform: scale(1.08);
 }
 div.contact a {
     font-size: 18px; 
     text-decoration: none; 
-    color: white ; 
+    color: white; 
     transition: transform 0.3s ease-in-out;
 }
-div.contact:hover{
+div.contact:hover {
     transform: scale(1.01);
 }
 
@@ -89,8 +81,8 @@ header > div.contact {
     margin-left: auto; 
     margin-right: 40px;
     background-color: #000;
-    color:white;
-    padding:10px 20px;
+    color: white;
+    padding: 10px 20px;
     border-radius: 50px;
 }
 
@@ -98,8 +90,8 @@ main {
     margin: 20px auto;
     padding: 0 20px;
 }
-.maindiv{
-    display:flex;
+.maindiv {
+    display: flex;
 }
 @media (max-width: 980px) {
     .maindiv {
@@ -122,43 +114,38 @@ h2 {
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-
 .pfp-image {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 10px 0;
     border-radius: 50%;
-    margin:auto;
-
+    margin: auto;
 }
-.emailtext{
-text-decoration: none;
-color:black;
+.emailtext {
+    text-decoration: none;
+    color: black;
 }
-.icons{
+.icons {
     width: 100px; 
     height: auto; 
     float: left; 
-    margin-right: 10px
+    margin-right: 10px;
 }
 .image-with-text {
     display: flex; 
     align-items: center; 
     gap: 10px; 
 }
-
 .image-with-text img {
     width: 100px; 
     height: auto; 
     float: left; 
     margin-right: 10px; 
 }
-
 .image-with-text div {
     flex: 1; 
 }
-
 .image-with-text p {
     margin: 0; 
 }
